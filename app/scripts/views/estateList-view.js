@@ -19,19 +19,14 @@ function(app, Backbone, estateListTemplate) {
         // Storing the View context
         self = this;
 
-        // Setting the View's model property to the passed in Model
-        /*
-        this.model = new Model({
-            message: "You are now using Backbone, Require, and jQuery!"
-        });
-        */
-
+        this.collection.bind("sort", this.render, this);
     },
     render: function() {
-      self.$el.html(self.template());
-      return self;
+      console.log('render');
+        self.$el.html(_.template(estateListTemplate, {estateCollection: this.collection.models}));
+
+        return self;
     }
-    //template: jobs
   });
 
   return EstateListView;

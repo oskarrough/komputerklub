@@ -1,7 +1,5 @@
 <ul>
-  <li><a href="#">eins</a></li>
-  <li>zwei</li>
-  <li>drei</li>
-  <li>view</li>
-  <li>fünf</li>
+  <% _.each(estateCollection, function(estate){ %>
+   <li><a href='<%= estate.get("name") %>'><%= estate.get("name") %></a></li> 
+  <% }); %>
 </ul>
