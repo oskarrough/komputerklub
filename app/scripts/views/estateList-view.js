@@ -19,10 +19,10 @@ function(app, Backbone, estateListTemplate) {
         // Storing the View context
         self = this;
 
-        this.collection.bind("sort", this.render, this);
+        this.collection.bind("filter", this.render, this);
     },
     render: function() {
-      console.log('render');
+console.log('render');
         self.$el.html(_.template(estateListTemplate, {estateCollection: this.collection.models}));
 
         return self;

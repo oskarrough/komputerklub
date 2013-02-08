@@ -21,14 +21,21 @@ function(app, Backbone, estateFilterTemplate) {
     },
 
     events: {
-      'click .filterItem': 'onFilterItemClicked',
+      'click input[type="checkbox"]': 'onFilterItemClicked',
       'click #js-toggle-panel--left': 'onFilterButtonClicked'
     },
 
     // event handler
 
-    onFilterItemClicked: function() {
-      this.collection.sort();
+    onFilterItemClicked: function(event) {
+      var selectedNeighbourhood = $(event.currentTarget).val();
+      var filtered = this.collection.byNeighbourhood(selectedNeighbourhood);
+      /*
+      console.log( filtered.length );
+      console.log( JSON.stringify(this.collection) );
+      */
+      this.collection.trigger('filter'); // should be in the collection
+
       this.trigger('onFilterItemClicked');
     },
 

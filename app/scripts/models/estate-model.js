@@ -13,11 +13,8 @@ define([
       price: 444,
       size: 10,
       rooms: 2
-    },
-
-    toJSON : function() {
-      return _.clone(this.attributes);
     }
+
   });
 
   // Return the model for the module
