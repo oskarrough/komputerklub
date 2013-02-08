@@ -34,7 +34,7 @@ module.exports = function( grunt ) {
         options: {
           // config file to add multiple import paths and require 3rd party gems
           // @see http://ericdfields.com/post/installing-compass-frameworks-in-a-yeoman-project
-          config: 'compass.rb',
+          config: 'app/compass.rb',
           force: true
         }
       }

@@ -1,0 +1,125 @@
+
+/* Buttons */
+.button--left {
+	position: fixed;
+	top: 4px;
+	left: 4px;
+	z-index: 30;
+	letter-spacing: -40px;
+	overflow: hidden;
+}
+
+
+// Navigation header
+.nav-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+	z-index: 20;
+}
+
+/* -----important! aka role=main -----*/
+.container,
+.panel--left {
+	@include transition-timing-function(cubic-bezier(0, 1, 0.02, 1));
+	@include transition(all 200ms ease-in-out);
+}
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+/* Left panel -> Filter */
+.panel--left {
+	@include transform(translateX(-100%));
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 1;
+	padding: 1em;
+	width: 80%;
+	height: 100%;
+	background: rgb(238, 98, 98);
+	
+}
+.panel-is-active--left {
+	.panel--left {
+		@include transform(translateX(0));
+	}
+	.container {
+		@include transform(translateX(80%));
+	}
+}
+.panel-neighborhood input[type=checkbox] {
+	margin-right: .5em;
+}
+
+
+/* Content */
+.entry-list {
+	height: 100%;
+	margin-top: 5em;
+}
+
+
+/* Table formating */
+.table-wishlist {
+	width: 4%;
+}
+.table-thumbnail {
+	width: 14%;
+}
+.table-thumbnail img {
+	width: 100%;
+}
+.table-price {
+	width: 12%;
+}
+
+
+/* ------Footer -------*/
+[role="footer"] {
+	font-size: 0.6em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	opacity: 0.6;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: white;
+}
+footer li:first-child {
+	color: gray;
+}
+.nav-footer {
+	list-style: none;
+	padding: 0;
+}
+.nav-footer li {
+	display: inline;
+	padding: 1em 0 1em 1em;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+	.panel-is-active--left .container {
+		@include transform(translateX(30%));
+	}
+	.panel--left {
+		width: 30%;
+	}
+	.button--left {
+		letter-spacing: 0;
+	}
+}
