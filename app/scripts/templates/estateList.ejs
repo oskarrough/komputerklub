@@ -1,4 +1,4 @@
-<section class="list-entries">
+<section class="entry-list">
 <% _.each(estateCollection, function(estate){ %>
     <table>
         <tr>
@@ -8,7 +8,7 @@
             <td colspan="2" rowspan="2" class="table-thumbnail">
                 <img src="data/<%= estate.get("image") %>">
             </td>
-            <td colspan="5" class="table-title"><h3><%= estate.get("title") %></h3></td>
+            <td colspan="5" class="table-title"><h3><a href="<%= estate.get("name") %>"><%= estate.get("title") %></a></h3></td>
             <td colspan="2" rowspan="2" class="table-price"><%= estate.get("price") %> € <br><%= estate.get("size") %> sqm<br><%= estate.get("rooms") %> rooms</td>
         </tr>
         <tr>
