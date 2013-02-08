@@ -7,7 +7,12 @@ define([
   var EstateModel = Backbone.Model.extend({
 
     defaults: {
-      name: "Hightower"
+      title: "Hightower",
+      image: "",
+      neighbourhood: "Kreuzberg",
+      price: 444,
+      size: 10,
+      rooms: 2
     },
 
     toJSON : function() {

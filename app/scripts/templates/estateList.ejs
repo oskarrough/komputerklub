@@ -1,5 +1,5 @@
 <ul>
   <% _.each(estateCollection, function(estate){ %>
-   <li><a href='<%= estate.get("name") %>'><%= estate.get("name") %></a></li> 
+   <li><img src="data/<%= estate.get("image") %>"><a href='<%= estate.get("name") %>'><%= estate.get("title") %></a></li> 
   <% }); %>
 </ul>

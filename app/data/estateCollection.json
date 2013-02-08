@@ -1,17 +1,10 @@
 [
   {
-    "name": "Oskar"
-  },
-  {
-    "name": "Katrin"
-  },
-  {
-    "name": "Lisa"
-  },
-  {
-    "name": "Hugo"
-  },
-  {
-    "name": "Steve"
+    "title": "Traumwohnung mit großzügigem Balkon im Bergmannkiez",
+    "image": "images/68360971.jpeg",
+    "neighbourhood": "Kreuzberg",
+    "price": 1155,
+    "size": 82.5,
+    "rooms": 2
   }
 ]

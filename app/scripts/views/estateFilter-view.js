@@ -21,21 +21,24 @@ function(app, Backbone, estateFilterTemplate) {
     },
 
     events: {
-      'click .filterItem': 'onFilterItemClicked'
+      'click .filterItem': 'onFilterItemClicked',
+      'click #js-toggle-panel--left': 'onFilterButtonClicked'
     },
+
+    // event handler
 
     onFilterItemClicked: function() {
       this.collection.sort();
       this.trigger('onFilterItemClicked');
     },
 
+    onFilterButtonClicked: function() {
+        $('body').toggleClass('panel-is-active--left');
+    },
+
 
     render: function() {
       self.$el.html(self.template());
-
-      $('#js-toggle-panel--left').click(function(){
-        $('body').toggleClass('panel-is-active--left');
-      });
 
       return self;
     }
