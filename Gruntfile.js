@@ -32,10 +32,9 @@ module.exports = function( grunt ) {
       dist: {
         // http://compass-style.org/help/tutorials/configuration-reference/#configuration-properties
         options: {
-          css_dir: 'temp/styles',
-          sass_dir: 'app/styles',
-          images_dir: 'app/images',
-          javascripts_dir: 'temp/scripts',
+          // config file to add multiple import paths and require 3rd party gems
+          // @see http://ericdfields.com/post/installing-compass-frameworks-in-a-yeoman-project
+          config: 'compass.rb',
           force: true
         }
       }
@@ -172,6 +171,9 @@ module.exports = function( grunt ) {
       name: 'config'
     },
   });
+
+  // Default task. Prepare for deploy. Use before commit.
+  grunt.registerTask('default', 'compass:dist');
 
   // Alias the `test` task to run the `mocha` task instead
   grunt.registerTask('test', 'mocha');
