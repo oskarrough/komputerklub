@@ -8,7 +8,9 @@ define([
   var EstateCollection = Backbone.Collection.extend({
 
     model: EstateModel,
-    url: '../data/estateCollection.json',
+    
+    // Following is a copy/paste from this url: http://drupal7.maschinentempel.de/node.json?type=estate
+    url: '../data/estateCollectionDrupal.json',
 
     toJSON : function() {
       return this.map(function(model){
@@ -16,12 +18,10 @@ define([
       });
     },
 
-    // @todo: integrate this to the Drupal .json available at: 
-    // http://drupal7.maschinentempel.de/node.json?type=estate
-    // The Drupal API returns items under "list".
-    // parse: function(response) {
-    //   return response.list;
-    // },
+    // The Drupal API returns items under "list"
+    parse: function(response) {
+      return response.list;
+    },
 
     comparator: function(model) {
       return model.get('name');
