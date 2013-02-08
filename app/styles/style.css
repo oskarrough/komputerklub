@@ -75,7 +75,7 @@ section {
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 10;
+	z-index: -1;
 	opacity: 1;
 	padding: 5em 1em 1em;
 	width: 80%;
@@ -153,8 +153,9 @@ footer li:first-child {
 	display: inline;
 	padding: 1em 0em 1em 1em;
 }
+
 /* Media Queries */
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
 	.panel-is-active--left .container {
 		-webkit-transform: translateX(30%);
 		transform: translateX(30%);
@@ -165,16 +166,4 @@ footer li:first-child {
 	.button--left {
 		letter-spacing: 0px;
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
