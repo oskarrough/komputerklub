@@ -1,0 +1,24 @@
+/* Base */
+* {
+	@include box-sizing(border-box);
+}
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: black;
+}
+body {
+	margin: 0;
+	background: #ccc;
+	overflow-x: hidden;
+}
+h1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}

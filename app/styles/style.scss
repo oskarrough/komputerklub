@@ -1,26 +1,9 @@
-/* Base */
-* {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-html {
-	font-size: 16px;
-	font-family: sans-serif;
-	color: black;
-}
-body {
-	overflow-x: hidden;
-	background: #ccc;
-}
-h1 {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 1.5em;
-	text-transform: uppercase;
-}
+/*
+	HELLO UNREAL ESTATE
+*/
+@import "_base.scss";
+
+
 /* Buttons */
 button {
 	font-size: 100%;
@@ -39,9 +22,11 @@ button {
 	z-index: 30;
 	letter-spacing: -40px;
 	overflow: hidden;
-	transition: all 1s ease-in-out;
+	@include transition(all 1s ease-in-out);
 }
-/* -------- Navigation Header -------- */
+
+
+// Navigation header
 .nav-header {
 	position: fixed;
 	top: 0;
@@ -49,14 +34,16 @@ button {
 	background: black;
 	color: white;
 	text-align: center;
-	height: 5em; 
+	height: 5em;
 	z-index: 20;
 }
-/* ----- important! aka role=main ----- */
+
+/* -----important! aka role=main -----*/
 .container {
-	transition: all 1s ease-in-out;
-	transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
+	@include transition(all 1s ease-in-out);
+	@include transition-timing-function(cubic-bezier(0, 1, 0.02, 1));
 }
+
 /* Layout */
 section {
 	position: absolute;
@@ -65,11 +52,10 @@ section {
 	width: 100%;
 	height: 100%;
 	z-index: 4;
-	-webkit-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
-	-webkit-transition-timing-function: cubic-bezier(0.000, 1.000, 0.020, 1.000);
-	transition-timing-function: cubic-bezier(0.000, 1.000, 0.020, 1.000);
+	@include transition(all 1s ease-in-out);
+	@include transition-timing-function(cubic-bezier(0, 1, 0.02, 1));
 }
+
 /* Left panel -> Filter */
 .panel--left {
 	position: fixed;
@@ -82,29 +68,30 @@ section {
 	height: 100%;
 	padding-left: 2em;
 	background: #666;
-	transform: translateX(-100%);
-	transition: all 1s ease-in-out;
-	transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
-	-webkit-transform: translateX(-100%);
-	-webkit-transition: all 1s ease-in-out;
-	-webkit-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
+
+	@include transform(translateX(-100%));
+	@include transition(all 1s ease-in-out);
+	@include transition-timing-function(cubic-bezier(0, 1, 0.02, 1));
 }
 .panel-is-active--left .container {
-	-webkit-transform: translateX(80%);
-	transform: translateX(80%);
+	@include transform(translateX(80%));
 }
+
 .panel-is-active--left .panel--left {
-	-webkit-transform: translateX(0%);
-	transform: translateX(0%);
+	@include transform(translateX(0));
 }
 .panel-neighborhood input[type=checkbox] {
 	margin-right: .5em;
 }
+
+
 /* Content */
 .entry-list {
-	height: 100%; 
+	height: 100%;
 	margin-top: 5em;
 }
+
+
 /* Table formating */
 table {
 	width: 95%;
@@ -112,24 +99,21 @@ table {
 	margin: 0 auto;
 	margin-top: 1em;
 }
-
 .table-whishlist {
 	width: 4%;
 }
-
 .table-thumbnail {
 	width: 14%;
 }
-
 .table-thumbnail img {
 	width: 100%;
 }
-
 .table-price {
 	width: 12%;
 }
 
-/* ------ Footer ------- */
+
+/* ------Footer -------*/
 footer {
 	font-size: 0.6em;
 	position: fixed;
@@ -151,19 +135,19 @@ footer li:first-child {
 }
 .nav-footer li {
 	display: inline;
-	padding: 1em 0em 1em 1em;
+	padding: 1em 0 1em 1em;
 }
+
 
 /* Media Queries */
 @media screen and (min-width: 600px) {
 	.panel-is-active--left .container {
-		-webkit-transform: translateX(30%);
-		transform: translateX(30%);
+		@include transform(translateX(30%));
 	}
 	.panel--left {
 		width: 30%;
 	}
 	.button--left {
-		letter-spacing: 0px;
+		letter-spacing: 0;
 	}
 }

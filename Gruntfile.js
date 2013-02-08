@@ -169,7 +169,7 @@ module.exports = function( grunt ) {
       baseUrl: './scripts',
       wrap: true,
       name: 'config'
-    },
+    }
   });
 
   // Default task. Prepare for deploy. Use before commit.
