@@ -11,8 +11,8 @@
         "id": "4",
         "resource": "taxonomy_term"
       },
-      "field_size": null,
-      "field_rooms": null,
+      "field_size": 110,
+      "field_rooms": 5,
       "nid": "2",
       "vid": "2",
       "is_new": false,
