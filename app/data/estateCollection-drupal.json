@@ -1,0 +1,120 @@
+{
+  "self": "http://drupal7.maschinentempel.de/node?type=estate",
+  "first": "http://drupal7.maschinentempel.de/node?type=estate&page=0",
+  "last": "http://drupal7.maschinentempel.de/node?type=estate&page=0",
+  "list": [
+    {
+      "field_image": [],
+      "field_price": "300",
+      "field_neighbourhood": {
+        "uri": "http://drupal7.maschinentempel.de/taxonomy_term/4",
+        "id": "4",
+        "resource": "taxonomy_term"
+      },
+      "field_size": null,
+      "field_rooms": null,
+      "nid": "2",
+      "vid": "2",
+      "is_new": false,
+      "type": "estate",
+      "title": "My nice apartment",
+      "language": "und",
+      "url": "http://drupal7.maschinentempel.de/node/2",
+      "edit_url": "http://drupal7.maschinentempel.de/node/2/edit",
+      "status": "1",
+      "promote": "1",
+      "sticky": "0",
+      "created": "1360334975",
+      "changed": "1360334975",
+      "author": {
+        "uri": "http://drupal7.maschinentempel.de/user/4",
+        "id": "4",
+        "resource": "user"
+      },
+      "log": "",
+      "revision": null,
+      "body": [],
+      "views": 0,
+      "day_views": 0,
+      "last_view": null
+    },
+    {
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://drupal7.maschinentempel.de/file/13",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
+      "field_price": "210",
+      "field_neighbourhood": {
+        "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
+        "id": "2",
+        "resource": "taxonomy_term"
+      },
+      "field_size": "70",
+      "field_rooms": "2",
+      "nid": "3",
+      "vid": "3",
+      "is_new": false,
+      "type": "estate",
+      "title": "Helle Altbauwohnung mit Balkon",
+      "language": "und",
+      "url": "http://drupal7.maschinentempel.de/node/3",
+      "edit_url": "http://drupal7.maschinentempel.de/node/3/edit",
+      "status": "1",
+      "promote": "1",
+      "sticky": "0",
+      "created": "1360335168",
+      "changed": "1360339344",
+      "author": {
+        "uri": "http://drupal7.maschinentempel.de/user/1",
+        "id": "1",
+        "resource": "user"
+      },
+      "log": "",
+      "revision": null,
+      "body": [],
+      "views": 0,
+      "day_views": 0,
+      "last_view": null
+    },
+    {
+      "field_image": [],
+      "field_price": "3000",
+      "field_neighbourhood": {
+        "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
+        "id": "2",
+        "resource": "taxonomy_term"
+      },
+      "field_size": "400",
+      "field_rooms": "6",
+      "nid": "4",
+      "vid": "4",
+      "is_new": false,
+      "type": "estate",
+      "title": "Kreuzberg büro",
+      "language": "und",
+      "url": "http://drupal7.maschinentempel.de/node/4",
+      "edit_url": "http://drupal7.maschinentempel.de/node/4/edit",
+      "status": "1",
+      "promote": "1",
+      "sticky": "0",
+      "created": "1360339313",
+      "changed": "1360339313",
+      "author": {
+        "uri": "http://drupal7.maschinentempel.de/user/4",
+        "id": "4",
+        "resource": "user"
+      },
+      "log": "",
+      "revision": null,
+      "body": [],
+      "views": 0,
+      "day_views": 0,
+      "last_view": null
+    }
+  ]
+}
