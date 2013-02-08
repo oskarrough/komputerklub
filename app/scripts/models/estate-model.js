@@ -8,11 +8,11 @@ define([
 
     defaults: {
       title: "Hightower",
-      image: "",
-      neighbourhood: "Kreuzberg",
-      price: 444,
-      size: 10,
-      rooms: 2
+      image: "undefined",
+      neighbourhood: "undefined",
+      price: "undefined",
+      size: "undefined",
+      rooms: "undefined"
     }
 
   });

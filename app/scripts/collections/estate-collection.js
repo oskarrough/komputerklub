@@ -9,11 +9,10 @@ define([
 
     model: EstateModel,
     
-    // Following is a copy/paste from this url: http://drupal7.maschinentempel.de/node.json?type=estate
-    // local
-    url: '../data/estateCollectionDrupal.json',
     //url: '../data/estateCollection.json',
     //url: 'http://drupal7.maschinentempel.de/node.json?type=estate',
+    // Following is a temporary copy/paste from above URL
+    url: '../data/estateCollectionDrupal.json',
 
     byNeighbourhood: function(neighbourhood) {
       return this.filter(function(estate) {
