@@ -11,8 +11,17 @@ define([
     url: '../data/estateCollection.json',
 
     toJSON : function() {
-      return this.map(function(model){ return model.toJSON(); });
+      return this.map(function(model){
+        return model.toJSON();
+      });
     },
+
+    // @todo: integrate this to the Drupal .json available at: 
+    // http://drupal7.maschinentempel.de/node.json?type=estate
+    // The Drupal API returns items under "list".
+    // parse: function(response) {
+    //   return response.list;
+    // },
 
     comparator: function(model) {
       return model.get('name');
