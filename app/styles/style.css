@@ -170,11 +170,11 @@ footer li:first-child {
 
 
 /* Navigation */
-.nav {
+.nav-footer {
 	list-style: none;
 	padding: 0;
 }
-.nav li {
+.nav-footer li {
 	display: inline;
 	padding: 1em 0em 1em 1em;
 }
@@ -214,4 +214,92 @@ footer li:first-child {
 #main {
 	width: 80%;
 	margin: 100px auto;
+	
 }
+
+/* Lisa and Hugo styles */
+/* General */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+/* Nav Bar */
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  height: 5em; 
+  
+  }
+
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase; }
+
+#button-sidebar {
+  cursor: pointer; }
+
+/* Content */
+.results {
+  height: 100%; 
+  margin-top: 5em;
+}
+
+.container {
+  transition: all 1s ease-in-out;
+  transition-timing-function: cubic-bezier(0, 1, 0.02, 1); }
+
+/* Table formating*/
+table {
+  width: 95%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1em; }
+
+.table-whishlist {
+  width: 4%; }
+
+.table-thumbnail {
+  width: 14%; }
+
+.table-thumbnail img {
+  width: 100%; }
+
+.table-title {
+	
+}
+
+.table-price {
+  width: 8%; }
+
+/*td,
+tr {
+	border: 1px solid red;
+}*/
+
+/*Filter sidebar*/
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  width: 60%;
+  height: 100%;
+  padding-left: 2em;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+  transition-timing-function: cubic-bezier(0, 1, 0.02, 1); }
+
+.neighborhood input[type=checkbox] {
+  margin-right: .5em; }
+
+.sidebar-is-active .sidebar--left {
+  transform: translateX(0); }
+
+.sidebar-is-active .container {
+  transform: translateX(60%); }
