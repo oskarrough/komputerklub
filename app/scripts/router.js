@@ -5,12 +5,13 @@ define([
   "collections/estate-collection",
   "views/estateList-view",
   "views/estateFilter-view",
-  "views/estateDetail-view"
+  "views/estateDetail-view",
+  "views/estateMode-view"
 
 
 ],
 
-function(app, OptionCollection, EstateCollection, EstateListView, EstateFilterView, EstateDetailView) {
+function(app, OptionCollection, EstateCollection, EstateListView, EstateFilterView, EstateDetailView, EstateModeView) {
 
   // Defining the application router, you can attach sub routers here.
   var Router = Backbone.Router.extend({
@@ -30,6 +31,9 @@ function(app, OptionCollection, EstateCollection, EstateListView, EstateFilterVi
 
           var estateFilterView = new EstateFilterView({collection: optionCollection});
           estateFilterView.render();
+
+          var estateModeView = new EstateModeView();
+          estateModeView.render();
         }
       });
     },

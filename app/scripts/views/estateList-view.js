@@ -27,7 +27,7 @@ function(app, Backbone, estateListTemplate) {
     },
 
     onEstateHate: function(event) {
-      $(event.currentTarget).parent().parent().remove();
+      $(event.currentTarget).parent().parent().slideUp();
     },
 
     onEstateLove: function(event) {
@@ -36,7 +36,7 @@ function(app, Backbone, estateListTemplate) {
 
 
     render: function() {
-console.log('render');
+//console.log('render');
         self.$el.html(_.template(estateListTemplate, {estates: this.collection.models}));
 
         return self;

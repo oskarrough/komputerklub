@@ -14,17 +14,3 @@
 // Modular CSS
 @import "_base.scss";
 @import "_modules.scss";
-
-
-
-.circle {
-  width: 32px;
-  height: 32px;
-  margin: 0 10px 0 0;
-  padding: 0px 0px 0 3px;
-  border-radius: 20px;
-  float: left;
-}
-.circle:hover {
-  color: #F00;
-}

@@ -34,7 +34,23 @@ button {
 		background-color: lighten($primary-color,20%);
 		border-color: $primary-color;
 	}
+	&.circle {
+	  width: 32px;
+	  height: 32px;
+	  margin: 0 10px 0 0;
+	  padding: 0px 0px 0 3px;
+	  border-radius: 20px;
+	  float: left;
+	  text-align: center;
+	}
+	&.circle:hover {
+	  color: #F00;
+	}
 }
+
+
+
+
 table {
 	width: 100%;
 }

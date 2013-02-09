@@ -6,9 +6,23 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<title>Real Estate</title>
+		<title>Find es!</title>
 		<meta name="description" content=""/>
-		<meta name="viewport" content="width=device-width"/>
+  
+      <!-- Set the viewport to show the page at a scale of 1.0, and make it non-scalable -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        
+        <!-- Make it fullscreen / hide the browser URL bar -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!--
+            Give the status bar another colour
+            Valid values for "content" are: "default" (white), "black" and "black-translucent"
+            If set to "default" or "black", the content is displayed below the status bar. If set to
+            "black-translucent", the content is displayed under the bar.
+        -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
         <link rel="stylesheet" href="/styles/style.css"/>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -27,7 +41,7 @@
         <![endif]-->
 
 		<header class="nav-header" role="header">
-			<h1 class="site-title">Unreal Estate</h1>
+			<h1 class="site-title">Find es!</h1>
 		</header>
 		
 		<div id="main" class="l-main" role="main">
@@ -37,6 +51,8 @@
 		<!-- This loads the filter -->
 		<div id="filter" class="filter">
 		</div>
+    <div id="mode" class="mode">
+    </div>
 
 		<footer role="footer">
 			<ul class="nav-footer">
