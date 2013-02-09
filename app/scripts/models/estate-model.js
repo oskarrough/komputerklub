@@ -7,6 +7,7 @@ define([
   var EstateModel = Backbone.Model.extend({
 
     defaults: {
+      nid: null,
       title: "Hightower",
       image: "undefined",
       neighbourhood: "undefined",

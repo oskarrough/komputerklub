@@ -7,7 +7,8 @@ define([
   var OptionModel = Backbone.Model.extend({
 
     defaults: {
-      key: "Hightower",
+      id: 1,
+      key: "",
       value: ""
     }
 

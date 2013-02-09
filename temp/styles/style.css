@@ -1,7 +1,7 @@
 /*
 	HELLO UNREAL ESTATE
 */
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.5/sass/susy/_grid.scss */
+/* line 14, ../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.5/sass/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -41,6 +41,7 @@ h1 {
 button {
   -webkit-transition: background-color 50ms ease-in-out;
   -moz-transition: background-color 50ms ease-in-out;
+  -ms-transition: background-color 50ms ease-in-out;
   -o-transition: background-color 50ms ease-in-out;
   transition: background-color 50ms ease-in-out;
   font-size: .6875rem;
@@ -115,10 +116,12 @@ a:visited {
 .panel--left {
   -webkit-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -moz-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
+  -ms-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -o-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
@@ -272,4 +275,18 @@ footer li:first-child {
   .button--left {
     letter-spacing: 0;
   }
+}
+/* line 20, ../../app/styles/style.scss */
+.circle {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+  padding: 0px 0px 0 3px;
+  border-radius: 20px;
+  float: left;
+}
+
+/* line 28, ../../app/styles/style.scss */
+.circle:hover {
+  color: #F00;
 }

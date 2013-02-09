@@ -16,15 +16,30 @@ function(app, Backbone, estateListTemplate) {
 
     // View constructor
     initialize: function() {
-
       // Storing the View context
       self = this;
       this.collection.bind("filter", this.render, this);
     },
-    
+
+    events: {
+      'click button.hate': 'onEstateHate',
+      'click button.love': 'onEstateLove'
+    },
+
+    onEstateHate: function(event) {
+      $(event.currentTarget).parent().parent().remove();
+    },
+
+    onEstateLove: function(event) {
+      $(event.currentTarget).css({'color':'#0FF','border-color':'#0FF'});
+    },
+
+
     render: function() {
-      self.$el.html(_.template(estateListTemplate, { estateCollection: this.collection.models }));
-      return self;
+console.log('render');
+        self.$el.html(_.template(estateListTemplate, {estates: this.collection.models}));
+
+        return self;
     }
   });
 

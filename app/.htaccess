@@ -551,3 +551,13 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+
+
+# <IfModule mod_rewrite.c>
+#   # not a file or directory
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteCond %{REQUEST_FILENAME} !-l
+#   # example.com/home => example.com/index.html#home
+#   RewriteRule (?!^index\.html)^(.+)$ /index.html#$1 [L,NE]
+# </IfModule>

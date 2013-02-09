@@ -29,14 +29,19 @@ function(app, Backbone, estateFilterTemplate) {
 
     onFilterItemClicked: function(event) {
       var selectedNeighbourhood = $(event.currentTarget).val();
+      /*
       var filtered = this.collection.byNeighbourhood(selectedNeighbourhood);
+      */
       /*
       console.log( filtered.length );
       console.log( JSON.stringify(this.collection) );
       */
-      this.collection.trigger('filter'); // should be in the collection
+      //this.collection.trigger('filter'); // should be in the collection
 
-      this.trigger('onFilterItemClicked');
+      //app.router.navigate("neighbourhood:" + selectedNeighbourhood, {trigger: true});
+      app.router.navigate("neighbourhood", {trigger: true});
+
+      //this.trigger('onFilterItemClicked');
     },
 
     onFilterButtonClicked: function() {
