@@ -1,19 +1,32 @@
 <section class="entry-list">
-<% _.each(estateCollection, function(estate){ %>
     <table>
-        <tr>
-            <td rowspan="2" class="table-whishlist wishlist">
-                star
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Title</th>
+                <th>Neighbourhood</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+<% _.each(estateCollection, function(estate){ %>
+        <tr class="entry-list__item">
+            <td class="entry-list__whishlist">
+                <button id="js-save" class="button--save">Save</button>
             </td>
-            <td colspan="2" rowspan="2" class="table-thumbnail">
-                <img src="data/<%= estate.get("image") %>">
+            <td class="entry-list__thumbnail">
+                <img src="data/<%= estate.get("image") %>" width="75" height="50">
             </td>
-            <td colspan="5" class="table-title"><h3><a href="<%= estate.get("name") %>"><%= estate.get("title") %></a></h3></td>
-            <td colspan="2" rowspan="2" class="table-price"><%= estate.get("price") %> € <br><%= estate.get("size") %> sqm<br><%= estate.get("rooms") %> rooms</td>
+            <td class="entry-list__title">
+                <h3><a href="<%= estate.get("name") %>"><%= estate.get("title") %></a></h3>
+            </td>
+            <td class="entry-list__neighbourhood"><%= estate.get("neighbourhood") %></td>
+            <td class="entry-list__details">
+                <%= estate.get("price") %> € <br>
+                <%= estate.get("size") %> sqm<br>
+                <%= estate.get("rooms") %> rooms
+            </td>
         </tr>
-        <tr>
-            <td colspan="5"><%= estate.get("neighbourhood") %></td>
-        </tr>
-    </table>
 <% }); %>
+    </table>
 </section>
