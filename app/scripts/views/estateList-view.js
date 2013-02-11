@@ -3,6 +3,7 @@ define([
   "app",
   "backbone",
   "text!templates/estateList.ejs"
+  //,"models/estate-model"
 ],
 
 function(app, Backbone, estateListTemplate) {

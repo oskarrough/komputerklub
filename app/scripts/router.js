@@ -7,8 +7,6 @@ define([
   "views/estateFilter-view",
   "views/estateDetail-view",
   "views/estateMode-view"
-
-
 ],
 
 function(app, OptionCollection, EstateCollection, EstateListView, EstateFilterView, EstateDetailView, EstateModeView) {
@@ -39,7 +37,6 @@ function(app, OptionCollection, EstateCollection, EstateListView, EstateFilterVi
     },
 
     detail: function(nid) {
-      console.log('node id:');
       console.log('node id:' + nid);
       var estateDetailView = new EstateDetailView();
       estateDetailView.render();
