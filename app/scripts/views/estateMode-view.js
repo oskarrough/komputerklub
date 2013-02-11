@@ -10,7 +10,7 @@ function(app, Backbone, estateModeTemplate) {
   EstateModeView = Backbone.View.extend({
 
     // Represents the actual DOM element that corresponds to your View (There is a one to one relationship between View Objects and DOM elements)
-    el: '#mode',
+    el: '#js-mode',
     template: _.template(estateModeTemplate),
 
     // View constructor
@@ -21,18 +21,18 @@ function(app, Backbone, estateModeTemplate) {
     },
 
     events: {
-      'click .list': 'onModeList',
-      'click .grid': 'onModeGrid'
+      'click #js-view-list': 'onModeList',
+      'click #js-view-grid': 'onModeGrid'
     },
 
     // event handler
 
     onModeList: function () {
-      $('.entry-list ul').removeClass('grid').addClass('list');
+      $('.view').removeClass('view--grid').addClass('view--list');
     },
 
     onModeGrid: function () {
-      $('.entry-list ul').removeClass('list').addClass('grid');
+      $('.view').removeClass('view--list').addClass('view--grid');
     },
 
     render: function() {

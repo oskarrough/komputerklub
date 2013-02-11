@@ -11,7 +11,7 @@ function(app, Backbone, estateListTemplate) {
 
     // Represents the actual DOM element that corresponds to your View
     // (There is a one to one relationship between View Objects and DOM elements)
-    el: '#main',
+    el: '#js-main',
     template: _.template(estateListTemplate),
 
     // View constructor
@@ -36,10 +36,8 @@ function(app, Backbone, estateListTemplate) {
 
 
     render: function() {
-//console.log('render');
-        self.$el.html(_.template(estateListTemplate, {estates: this.collection.models}));
-
-        return self;
+      self.$el.html(_.template(estateListTemplate, {estates: this.collection.models}));
+      return self;
     }
   });
 

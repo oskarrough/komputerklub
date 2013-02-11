@@ -14,43 +14,17 @@ body {
 	overflow-x: hidden;
 }
 h1 {
-	font-size: 1.5em;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-transform: uppercase;
+	margin: 0 0 (20/24)*1em;
 }
-button {
-	@include transition(background-color 50ms ease-in-out);
-	font-size: .6875rem;
-	padding: .75em 1em .7em;
-	border: 3px solid white;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
-	cursor: pointer;
-	border-color: #fff;
-	background-color: $primary-color;
-	color: #fff;
-	&:hover {
-		background-color: lighten($primary-color,20%);
-		border-color: $primary-color;
-	}
-	&.circle {
-	  width: 32px;
-	  height: 32px;
-	  margin: 0 10px 0 0;
-	  padding: 0px 0px 0 3px;
-	  border-radius: 20px;
-	  float: left;
-	  text-align: center;
-	}
-	&.circle:hover {
-	  color: #F00;
-	}
+h3 {
+	font-size: 1.25rem;
+	margin: 0 0 (20/20)*1em;	
 }
-
-
-
-
+p {
+	margin: 0 0 $gutter;
+}
 table {
 	width: 100%;
 }
@@ -66,4 +40,10 @@ a {
 	&:visited {
 		color: lighten($primary-color, 20%);
 	}
+}
+figure {
+	margin: 0;
+}
+img {
+	max-width: 100%;
 }

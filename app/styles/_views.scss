@@ -1,0 +1,50 @@
+// ============================================================================
+// Views
+.view {
+	@include pie-clearfix;
+	list-style: none;
+	padding: 0;
+}
+.view__item {
+	position: relative;
+	
+	> a {
+		display: block;
+	}
+}
+
+// Grid view
+.view--grid {
+	img {
+		width: 100%;
+	}
+	h3 {
+		display: none;
+	}
+	.view__item {
+		float: left;
+		width: 20%;
+		margin-right: $gutter;
+	}
+}
+
+// List view
+.view--list {
+	.view__item {
+		overflow: auto;
+		border-bottom: 1px solid $lightgray;
+		margin-bottom: $gutter;
+	}
+	figure {
+		float: left;
+		margin: 0 $gutter $gutter 0;
+	}
+	.title {
+		margin: 0;
+	}
+	.actions {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

@@ -1,24 +1,24 @@
-<section class="entry-list">
-    <ul class="list">
-<% _.each(estates, function(estate){ %>
-        <li>
-            <a href="#show/<%= estate.get("nid") %>">
-                <figure>
-                    <img src="data/<%= estate.get("image") %>" width="75" height="50">
-                </figure>
-                <h3><%= estate.get("title") %></h3>
-                <div class="entry">
-                    <%= estate.get("neighbourhood") %>
-                    <%= estate.get("price") %> € <br>
-                    <%= estate.get("size") %> sqm<br>
-                    <%= estate.get("rooms") %> rooms
-                </div>
-            </a>
-            <div class="actions">
-                <button class="circle love">✔</button>
-                <button class="circle hate">✖</button>
-            </div>
-        </li>
-<% }); %>
-    </ul>
-</section>
+<ul class="view view--list">
+	<% _.each(estates, function(estate){ %>
+	<li class="view__item">
+		<a href="#show/<%= estate.get("nid") %>">
+			<figure class="view__media">
+				<img src="data/<%= estate.get("image") %>" width="75" height="50">
+			</figure>
+			<div class="view__body">
+				<h3 class="title"><%= estate.get("title") %></h3>
+				<p>
+					<%= estate.get("neighbourhood") %>
+					<%= estate.get("price") %> € <br>
+					<%= estate.get("size") %> sqm<br>
+					<%= estate.get("rooms") %> rooms
+				</p>
+			</div>
+		</a>
+		<div class="actions">
+			<button id="js-love" class="button--circle success">✔</button>
+			<button id="js-hate" class="button--circle danger">✖</button>
+		</div>
+	</li>
+	<% }); %>
+</ul>

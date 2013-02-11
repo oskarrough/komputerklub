@@ -1,3 +1,3 @@
-# Komputer Klub
+# Find.es
 
 Having some Friday fun.

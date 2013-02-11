@@ -1,7 +1,7 @@
 /*
 	HELLO UNREAL ESTATE
 */
-/* line 14, ../../../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.5/sass/susy/_grid.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.5/sass/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,18 +32,62 @@ body {
 
 /* line 16, ../../app/styles/_base.scss */
 h1 {
-  font-size: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin: 0 0 0.83333em;
 }
 
 /* line 21, ../../app/styles/_base.scss */
-button {
-  -webkit-transition: background-color 50ms ease-in-out;
-  -moz-transition: background-color 50ms ease-in-out;
-  -ms-transition: background-color 50ms ease-in-out;
-  -o-transition: background-color 50ms ease-in-out;
-  transition: background-color 50ms ease-in-out;
+h3 {
+  font-size: 1.25rem;
+  margin: 0 0 1em;
+}
+
+/* line 25, ../../app/styles/_base.scss */
+p {
+  margin: 0 0 1.25em;
+}
+
+/* line 28, ../../app/styles/_base.scss */
+table {
+  width: 100%;
+}
+
+/* line 31, ../../app/styles/_base.scss */
+th {
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* line 35, ../../app/styles/_base.scss */
+a {
+  color: #2828ff;
+}
+/* line 37, ../../app/styles/_base.scss */
+a:hover {
+  color: #7474ff;
+}
+/* line 40, ../../app/styles/_base.scss */
+a:visited {
+  color: #8e8eff;
+}
+
+/* line 44, ../../app/styles/_base.scss */
+figure {
+  margin: 0;
+}
+
+/* line 47, ../../app/styles/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 1, ../../app/styles/_buttons.scss */
+.button, button {
+  -webkit-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
+  -moz-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
+  -o-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
+  transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
   font-size: .6875rem;
   padding: 0.75em 1em 0.7em;
   border: 3px solid white;
@@ -55,65 +99,65 @@ button {
   background-color: #2828ff;
   color: #fff;
 }
-/* line 33, ../../app/styles/_base.scss */
-button:hover {
+/* line 19, ../../app/styles/_buttons.scss */
+.button:hover, button:hover {
   background-color: #8e8eff;
   border-color: #2828ff;
 }
-/* line 37, ../../app/styles/_base.scss */
-button.circle {
-  width: 32px;
-  height: 32px;
-  margin: 0 10px 0 0;
-  padding: 0px 0px 0 3px;
-  border-radius: 20px;
-  float: left;
+/* line 23, ../../app/styles/_buttons.scss */
+.button.active, button.active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/* line 27, ../../app/styles/_buttons.scss */
+.button--circle {
+  width: 3em;
+  height: 3em;
+  padding: 0 0 0 3px;
+  border-radius: 50%;
   text-align: center;
 }
-/* line 46, ../../app/styles/_base.scss */
-button.circle:hover {
+/* line 33, ../../app/styles/_buttons.scss */
+.button--circle:hover {
   color: #F00;
 }
 
-/* line 54, ../../app/styles/_base.scss */
-table {
-  width: 100%;
+/* line 38, ../../app/styles/_buttons.scss */
+.button.success:hover, button.success:hover {
+  background-color: #00b300;
+  color: #fff;
 }
 
-/* line 57, ../../app/styles/_base.scss */
-th {
-  text-align: left;
-  border-bottom: 1px solid #f2f2f2;
+/* line 44, ../../app/styles/_buttons.scss */
+.button.danger:hover, button.danger:hover {
+  background-color: red;
+  color: #fff;
 }
 
-/* line 61, ../../app/styles/_base.scss */
-a {
-  color: #2828ff;
-}
-/* line 63, ../../app/styles/_base.scss */
-a:hover {
-  color: #7474ff;
-}
-/* line 66, ../../app/styles/_base.scss */
-a:visited {
-  color: #8e8eff;
-}
-
-/* Buttons */
 /* line 3, ../../app/styles/_modules.scss */
-.button--left {
+.button--left,
+.mode {
   position: fixed;
   top: 5px;
-  left: 5px;
-  z-index: 30;
-  letter-spacing: -40px;
-  overflow: hidden;
-  font-size: 1rem;
-  background: none;
-  color: white;
+  z-index: 5;
 }
 
-/* line 18, ../../app/styles/_modules.scss */
+/* line 8, ../../app/styles/_modules.scss */
+.button--left {
+  left: 5px;
+  letter-spacing: -40px;
+}
+
+/* line 12, ../../app/styles/_modules.scss */
+.mode {
+  right: 5px;
+}
+
+/* line 20, ../../app/styles/_modules.scss */
 .nav-header {
   position: fixed;
   top: 0;
@@ -121,61 +165,36 @@ a:visited {
   background: #2b3152;
   color: white;
   text-align: center;
-  z-index: 20;
+  z-index: 4;
+  min-height: 49px;
+}
+/* line 29, ../../app/styles/_modules.scss */
+.nav-header .site-title {
+  margin: 0.45833em 0 0;
 }
 
-/* -----important! aka role=main -----*/
-/* line 30, ../../app/styles/_modules.scss */
+/* line 34, ../../app/styles/_modules.scss */
 [role="main"],
 .panel--left {
   -webkit-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -moz-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
-  -ms-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -o-transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   transition-timing-function: cubic-bezier(0, 1, 0.02, 1);
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
-/* line 34, ../../app/styles/_modules.scss */
+/* line 38, ../../app/styles/_modules.scss */
 [role="main"] {
-  position: absolute;
-  top: 61px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 4;
-}
-
-/* line 42, ../../app/styles/_modules.scss */
-.entry-list {
+  margin: 69px 1.25em 1.25em;
   background: #fff;
-  margin: 2em;
   padding: 1em;
 }
 
-/* line 48, ../../app/styles/_modules.scss */
-.entry-list__item td {
-  border-bottom: 1px solid #ebebeb;
-}
-/* line 51, ../../app/styles/_modules.scss */
-.entry-list__item:last-child td {
-  border-bottom: 0;
-}
-/* line 54, ../../app/styles/_modules.scss */
-.entry-list__item td:first-child {
-  border-left: 5px solid transparent;
-}
-/* line 57, ../../app/styles/_modules.scss */
-.entry-list__item:hover td:first-child {
-  border-color: #2b3152;
-}
-
 /* Left panel -> Filter */
-/* line 63, ../../app/styles/_modules.scss */
+/* line 52, ../../app/styles/_modules.scss */
 .panel--left {
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
@@ -184,16 +203,16 @@ a:visited {
   transform: translateX(-100%);
   position: fixed;
   left: 0;
-  top: 0;
+  top: 49px;
   z-index: -1;
   opacity: 1;
   padding: 1em;
-  width: 80%;
+  width: 90%;
   height: 100%;
   background: #ee6262;
 }
 
-/* line 77, ../../app/styles/_modules.scss */
+/* line 66, ../../app/styles/_modules.scss */
 .panel-is-active--left .panel--left {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -201,44 +220,21 @@ a:visited {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 80, ../../app/styles/_modules.scss */
+/* line 69, ../../app/styles/_modules.scss */
 .panel-is-active--left [role="main"] {
-  -webkit-transform: translateX(80%);
-  -moz-transform: translateX(80%);
-  -ms-transform: translateX(80%);
-  -o-transform: translateX(80%);
-  transform: translateX(80%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
-/* line 84, ../../app/styles/_modules.scss */
+/* line 73, ../../app/styles/_modules.scss */
 .panel-neighborhood input[type=checkbox] {
   margin-right: .5em;
 }
 
-/* Content */
-/* Table formating */
-/* line 95, ../../app/styles/_modules.scss */
-.table-wishlist {
-  width: 4%;
-}
-
-/* line 98, ../../app/styles/_modules.scss */
-.table-thumbnail {
-  width: 14%;
-}
-
-/* line 101, ../../app/styles/_modules.scss */
-.table-thumbnail img {
-  width: 100%;
-}
-
-/* line 104, ../../app/styles/_modules.scss */
-.table-price {
-  width: 12%;
-}
-
-/* ------Footer -------*/
-/* line 110, ../../app/styles/_modules.scss */
+/* line 79, ../../app/styles/_modules.scss */
 [role="footer"] {
   font-size: 0.6em;
   position: fixed;
@@ -252,45 +248,45 @@ a:visited {
   background: white;
 }
 
-/* line 122, ../../app/styles/_modules.scss */
+/* line 91, ../../app/styles/_modules.scss */
 footer li:first-child {
   color: gray;
 }
 
-/* line 125, ../../app/styles/_modules.scss */
+/* line 94, ../../app/styles/_modules.scss */
 .nav-footer {
   list-style: none;
   padding: 0;
 }
 
-/* line 129, ../../app/styles/_modules.scss */
+/* line 98, ../../app/styles/_modules.scss */
 .nav-footer li {
   display: inline;
   padding: 1em 0 1em 1em;
 }
 
 /* Media Queries */
-@media screen and (min-width: 600px) {
-  /* line 137, ../../app/styles/_modules.scss */
-  .panel-is-active--left [role="main"] {
-    -webkit-transform: translateX(30%);
-    -moz-transform: translateX(30%);
-    -ms-transform: translateX(30%);
-    -o-transform: translateX(30%);
-    transform: translateX(30%);
-  }
-
-  /* line 140, ../../app/styles/_modules.scss */
+@media screen and (min-width: 35em) {
+  /* line 107, ../../app/styles/_modules.scss */
   .panel--left {
-    width: 30%;
+    width: 13.75em;
   }
 
-  /* line 143, ../../app/styles/_modules.scss */
-  .button--left {
+  /* line 110, ../../app/styles/_modules.scss */
+  .panel-is-active--left [role="main"] {
+    -webkit-transform: translateX(13.75em);
+    -moz-transform: translateX(13.75em);
+    -ms-transform: translateX(13.75em);
+    -o-transform: translateX(13.75em);
+    transform: translateX(13.75em);
+  }
+
+  /* line 113, ../../app/styles/_modules.scss */
+  [role="header"] button {
     letter-spacing: 0;
   }
 }
-/* line 149, ../../app/styles/_modules.scss */
+/* line 119, ../../app/styles/_modules.scss */
 .loading {
   position: absolute;
   display: block;
@@ -301,47 +297,61 @@ footer li:first-child {
   margin-left: -50px;
 }
 
-/* line 159, ../../app/styles/_modules.scss */
-#mode {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  z-index: 30;
-  font-size: 1rem;
-  background: none;
-  color: white;
+/* line 3, ../../app/styles/_views.scss */
+.view {
+  *zoom: 1;
+  list-style: none;
+  padding: 0;
+}
+/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.view:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 169, ../../app/styles/_modules.scss */
-ul.grid {
-  list-style: none;
+/* line 8, ../../app/styles/_views.scss */
+.view__item {
+  position: relative;
 }
-/* line 171, ../../app/styles/_modules.scss */
-ul.grid li  {
-  width: 18%;
-  float: left;
+/* line 11, ../../app/styles/_views.scss */
+.view__item > a {
+  display: block;
 }
-/* line 174, ../../app/styles/_modules.scss */
-ul.grid li  h3 {
+
+/* line 18, ../../app/styles/_views.scss */
+.view--grid img {
+  width: 100%;
+}
+/* line 21, ../../app/styles/_views.scss */
+.view--grid h3 {
   display: none;
 }
-
-/* line 179, ../../app/styles/_modules.scss */
-ul.grid li {
-  width: 18%;
+/* line 24, ../../app/styles/_views.scss */
+.view--grid .view__item {
   float: left;
+  width: 20%;
+  margin-right: 1.25em;
 }
 
-/* line 183, ../../app/styles/_modules.scss */
-ul.list {
-  list-style: none;
+/* line 33, ../../app/styles/_views.scss */
+.view--list .view__item {
+  overflow: auto;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 1.25em;
 }
-/* line 185, ../../app/styles/_modules.scss */
-ul.list li  {
-  width: 100%;
-  float: none;
-}
-/* line 188, ../../app/styles/_modules.scss */
-ul.list li  figure {
+/* line 38, ../../app/styles/_views.scss */
+.view--list figure {
   float: left;
+  margin: 0 1.25em 1.25em 0;
+}
+/* line 42, ../../app/styles/_views.scss */
+.view--list .title {
+  margin: 0;
+}
+/* line 45, ../../app/styles/_views.scss */
+.view--list .actions {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

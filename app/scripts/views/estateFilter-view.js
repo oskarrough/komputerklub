@@ -10,7 +10,7 @@ function(app, Backbone, estateFilterTemplate) {
   EstateFilterView = Backbone.View.extend({
 
     // Represents the actual DOM element that corresponds to your View (There is a one to one relationship between View Objects and DOM elements)
-    el: '#filter',
+    el: '#js-filter',
     template: _.template(estateFilterTemplate),
 
     // View constructor

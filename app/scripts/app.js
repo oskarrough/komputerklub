@@ -67,7 +67,7 @@ function($, _, Backbone) {
       });
 
       // Insert into the DOM.
-      $("#main").empty().append(layout.el);
+      $("#js-main").empty().append(layout.el);
 
       // Render the layout.
       layout.render();

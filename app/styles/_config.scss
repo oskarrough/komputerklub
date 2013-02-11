@@ -1,4 +1,15 @@
+// Colors
 $primary-color: rgb(40, 40, 255);
 $darkblue: rgb(43, 49, 82);
+$lightgray: darken(#fff,10%);
+$color-success: lighten(green, 10%);
+$color-danger: red;
+
+
+// Typography
 $base-font-size: 16px;
+$base-font-size-unitless: 16;
 $font-family: 'Helvetica Neue', Helvetica, sans-serif;
+
+// Layout
+$gutter: (20/$base-font-size-unitless) * 1em;

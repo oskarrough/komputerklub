@@ -11,7 +11,7 @@ function(app, Backbone, estateDetailTemplate, EstateModel) {
   EstateListView = Backbone.View.extend({
 
     // Represents the actual DOM element that corresponds to your View (There is a one to one relationship between View Objects and DOM elements)
-    el: '#main',
+    el: '#js-main',
     template: _.template(estateDetailTemplate),
 
     // View constructor
