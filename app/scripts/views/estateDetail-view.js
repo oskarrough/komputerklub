@@ -8,16 +8,17 @@ define([
 
 function(app, Backbone, estateDetailTemplate, EstateModel) {
   var self,
-  EstateListView = Backbone.View.extend({
+  EstateDetailView = Backbone.View.extend({
 
-    // Represents the actual DOM element that corresponds to your View (There is a one to one relationship between View Objects and DOM elements)
+    // Represents the actual DOM element that corresponds to your View
+    // (There is a one to one relationship between View Objects and DOM elements)
     el: '#js-main',
     template: _.template(estateDetailTemplate),
 
     // View constructor
     initialize: function() {
-        // Storing the View context
-        self = this;
+      // Storing the View context
+      self = this;
     },
 
     render: function() {
@@ -29,5 +30,5 @@ function(app, Backbone, estateDetailTemplate, EstateModel) {
 
   });
 
-  return EstateListView;
+  return EstateDetailView;
 });
