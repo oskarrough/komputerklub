@@ -14,11 +14,11 @@
 	letter-spacing: 2px;
 	cursor: pointer;
 	border-color: #fff;
-	background-color: $primary-color;
+	background-color: $primary;
 	color: #fff;
 	&:hover {
-		background-color: lighten($primary-color,20%);
-		border-color: $primary-color;
+		background-color: lighten($primary,20%);
+		border-color: $primary;
 	}
 	&.active {
 		@include transform(scale(0.95));
@@ -35,12 +35,14 @@
 	}
 }
 .button.success {
+	&.is-active,
 	&:hover {
 		background-color: $color-success;
 		color: #fff;
 	}	
 }
 .button.danger {
+	&.is-active,
 	&:hover {
 		background-color: $color-danger;
 		color: #fff;
@@ -49,4 +51,7 @@
 
 button {
 	@extend .button;
+}
+[role="header"] .button.is-active {
+	opacity: 0.5;
 }

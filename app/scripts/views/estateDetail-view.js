@@ -21,7 +21,9 @@ function(app, Backbone, estateDetailTemplate, EstateModel) {
     },
 
     render: function() {
-        self.$el.html(_.template(estateDetailTemplate, {estate: new EstateModel()}));
+        self.$el.html(_.template(estateDetailTemplate, {
+          estate: new EstateModel()
+        }));
         return self;
     }
 

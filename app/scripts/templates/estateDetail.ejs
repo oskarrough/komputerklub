@@ -1,7 +1,8 @@
-<section class="entry-detail">
-    <h2><%= estate.get("title") %></h2>
-    <!--
-    <img src="data/<%= estate.get("image") %>">
-    -->
-    <p><%= estate.get("price") %> € <br><%= estate.get("size") %> sqm<br><%= estate.get("rooms") %> rooms</p>
-</section>
+<article class="view view--detail">
+	<h1><%= estate.get("title") %></h1>
+	<p>
+		<%= estate.get("price") %> € <br>
+		<%= estate.get("size") %> sqm<br>
+		<%= estate.get("rooms") %> rooms
+	</p>
+</article>

@@ -7,9 +7,14 @@
 }
 .view__item {
 	position: relative;
+	@include transition(padding-left 50ms ease-in-out);
 	
 	> a {
 		display: block;
+		text-decoration: none;
+	}
+	p {
+		color: #000;
 	}
 }
 
@@ -31,7 +36,7 @@
 // List view
 .view--list {
 	.view__item {
-		overflow: auto;
+		@include pie-clearfix;
 		border-bottom: 1px solid $lightgray;
 		margin-bottom: $gutter;
 	}
@@ -46,5 +51,11 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+}
+.is-loved {
+	padding-left: $gutter;
+	.view__body {
+		opacity: 0.5;
 	}
 }

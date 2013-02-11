@@ -1,10 +1,10 @@
 // Colors
-$primary-color: rgb(40, 40, 255);
-$darkblue: rgb(43, 49, 82);
+$primary: rgb(40, 40, 255);
+$primary--dark: darken($primary, 40%);
+//rgb(43, 49, 82);
 $lightgray: darken(#fff,10%);
 $color-success: lighten(green, 10%);
 $color-danger: red;
-
 
 // Typography
 $base-font-size: 16px;

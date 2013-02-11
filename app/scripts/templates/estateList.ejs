@@ -2,22 +2,22 @@
 	<% _.each(estates, function(estate){ %>
 	<li class="view__item">
 		<a href="#show/<%= estate.get("nid") %>">
-			<figure class="view__media">
+			<!-- <figure class="view__media">
 				<img src="data/<%= estate.get("image") %>" width="75" height="50">
-			</figure>
+			</figure> -->
 			<div class="view__body">
 				<h3 class="title"><%= estate.get("title") %></h3>
 				<p>
-					<%= estate.get("neighbourhood") %>
-					<%= estate.get("price") %> € <br>
-					<%= estate.get("size") %> sqm<br>
+					in <%= estate.get("neighbourhood") %>, 
+					<%= estate.get("price") %> €, 
+					<%= estate.get("size") %> sqm, 
 					<%= estate.get("rooms") %> rooms
 				</p>
 			</div>
 		</a>
 		<div class="actions">
-			<button id="js-love" class="button--circle success">✔</button>
-			<button id="js-hate" class="button--circle danger">✖</button>
+			<button id="js-love" class="button--circle success" title="Save it, I'm interested!">✔</button>
+			<button id="js-hate" class="button--circle danger" title="Remove it, I don't like it">✖</button>
 		</div>
 	</li>
 	<% }); %>

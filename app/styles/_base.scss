@@ -33,12 +33,12 @@ th {
 	border-bottom: 1px solid darken(#fff,5%);
 }
 a {
-	color: $primary-color;
+	color: $primary;
 	&:hover {
-		color: lighten($primary-color, 15%);
+		color: lighten($primary, 15%);
 	}
 	&:visited {
-		color: lighten($primary-color, 20%);
+		color: lighten($primary, 20%);
 	}
 }
 figure {

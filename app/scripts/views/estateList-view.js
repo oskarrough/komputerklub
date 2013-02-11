@@ -22,18 +22,21 @@ function(app, Backbone, estateListTemplate) {
     },
 
     events: {
-      'click button.hate': 'onEstateHate',
-      'click button.love': 'onEstateLove'
-    },
-
-    onEstateHate: function(event) {
-      $(event.currentTarget).parent().parent().slideUp();
+      'click #js-hate': 'onEstateHate',
+      'click #js-love': 'onEstateLove'
     },
 
     onEstateLove: function(event) {
-      $(event.currentTarget).css({'color':'#0FF','border-color':'#0FF'});
+      $(event.currentTarget)
+        .toggleClass('is-active')
+        .parents('.view__item').toggleClass('is-loved');
     },
 
+    onEstateHate: function(event) {
+      $(event.currentTarget)
+        .toggleClass('is-active')
+        .parents('.view__item').slideUp(100).toggleClass('is-hated');
+    },
 
     render: function() {
       self.$el.html(_.template(estateListTemplate, {estates: this.collection.models}));

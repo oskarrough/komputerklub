@@ -37,8 +37,10 @@
     </head>
     <body>
 
-		<header class="nav-header" role="header">
-			<h1 class="site-title">Find.es!</h1>
+		<header class="header" role="header">
+			<button id="js-toggle-panel--left" class="button--left">Filter</button>
+            <h1 class="site-title">Find.es!</h1>
+            <div id="js-view-mode" class="view-mode"></div>
 		</header>
 		
 		<div id="js-main" class="l-main" role="main">
@@ -49,16 +51,15 @@
 		<div id="js-filter" class="filter">
 		</div>
 
-        <div id="js-mode" class="mode">
-        </div>
+        
 
-		<footer role="footer">
+		<!-- <footer role="footer">
 			<ul class="nav-footer">
 				<li>Copyright 2013</li>
 				<li>Imprint</li>
 				<li>Facebook</li>
 			</ul>
-		</footer>
+		</footer> -->
 
         <!-- build:js scripts/amd-app.js -->
         <script data-main="scripts/config" src="/scripts/libs/require.js"></script>
