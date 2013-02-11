@@ -34,36 +34,28 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         -->
-    </head>
-    <body>
+	</head>
+	<body>
 
 		<header class="header" role="header">
-			<button id="js-toggle-panel--left" class="button--left">Filter</button>
-            <h1 class="site-title">Find.es!</h1>
-            <div id="js-view-mode" class="view-mode"></div>
+			<h1 class="site-title">Find.es!</h1>
 		</header>
 		
-		<div id="js-main" class="l-main" role="main">
-			<div class="loading">Application is loading</div>
+		<div id="js-main" class="main" role="main">
+			<div class="loading">Application is loading…</div>
 		</div>
 
 		<!-- This loads the filter -->
 		<div id="js-filter" class="filter">
 		</div>
 
-        
+		<!-- This loads the filter -->
+		<div id="js-view-mode">
+		</div>
 
-		<!-- <footer role="footer">
-			<ul class="nav-footer">
-				<li>Copyright 2013</li>
-				<li>Imprint</li>
-				<li>Facebook</li>
-			</ul>
-		</footer> -->
+		<!-- build:js scripts/amd-app.js -->
+		<script data-main="scripts/config" src="/scripts/libs/require.js"></script>
+		<!-- endbuild -->
 
-        <!-- build:js scripts/amd-app.js -->
-        <script data-main="scripts/config" src="/scripts/libs/require.js"></script>
-        <!-- endbuild -->
-
-    </body>
+	</body>
 </html>

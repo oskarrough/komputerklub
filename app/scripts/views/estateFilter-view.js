@@ -45,9 +45,9 @@ function(app, Backbone, estateFilterTemplate) {
     },
 
     onFilterButtonClicked: function() {
+        alert('test');
         $('body').toggleClass('panel-is-active--left');
     },
-
 
     render: function() {
       self.$el.html(self.template());

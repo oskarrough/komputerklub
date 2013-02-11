@@ -1,14 +1,11 @@
+.button,
+.button-group {
+}
 .button {
-	@include transition(
-		background-color 50ms ease-in-out,
-		border-color 200ms ease-in-out,
-		-webkit-scale 200ms,
-		-moz-scale 200ms,
-		scale 200ms
-	);
+	@include transition(all 50ms ease-in-out);
+	border: (3/11)*1em solid white;
 	font-size: .6875rem;
 	padding: .75em 1em .7em;
-	border: 3px solid white;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -19,39 +16,47 @@
 	&:hover {
 		background-color: lighten($primary,20%);
 		border-color: $primary;
+		color: #fff;
 	}
 	&.active {
 		@include transform(scale(0.95));
 	}
 }
 .button--circle {
+	@include transition(all 200ms);
+	@include scale(1);
 	width: 3em;
 	height: 3em;
 	padding: 0 0 0 3px;
 	border-radius: 50%;
-	text-align: center;
 	&:hover {
-		color: #F00;
+		@include scale(1.1);
 	}
 }
 .button.success {
 	&.is-active,
 	&:hover {
 		background-color: $color-success;
-		color: #fff;
 	}	
 }
 .button.danger {
 	&.is-active,
 	&:hover {
 		background-color: $color-danger;
-		color: #fff;
 	}	
-}
-
-button {
-	@extend .button;
 }
 [role="header"] .button.is-active {
 	opacity: 0.5;
+}
+
+
+.button-group {
+	border: (3/$base-font-size-unitless)*1em solid #fff;
+	.button {
+		border: 0;
+	}
+	.button:not(:first-child) {
+		margin: (3/$base-font-size-unitless)*1em 0 (3/$base-font-size-unitless)*1em (8/$base-font-size-unitless)*-1em;
+		border-left: 0;
+	}
 }

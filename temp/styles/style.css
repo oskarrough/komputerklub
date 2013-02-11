@@ -27,70 +27,60 @@ html {
 body {
   margin: 0;
   background: #f2f2f2;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 16, ../../app/styles/_base.scss */
+/* line 17, ../../app/styles/_base.scss */
 h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0 0 0.83333em;
 }
 
-/* line 21, ../../app/styles/_base.scss */
+/* line 22, ../../app/styles/_base.scss */
 h3 {
   font-size: 1.25rem;
   margin: 0 0 1em;
 }
 
-/* line 25, ../../app/styles/_base.scss */
+/* line 26, ../../app/styles/_base.scss */
 p {
   margin: 0 0 1.25em;
 }
 
-/* line 28, ../../app/styles/_base.scss */
-table {
-  width: 100%;
-}
-
-/* line 31, ../../app/styles/_base.scss */
-th {
-  text-align: left;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-/* line 35, ../../app/styles/_base.scss */
+/* line 29, ../../app/styles/_base.scss */
 a {
   color: #2828ff;
 }
-/* line 37, ../../app/styles/_base.scss */
+/* line 31, ../../app/styles/_base.scss */
 a:hover {
   color: #7474ff;
 }
-/* line 40, ../../app/styles/_base.scss */
+/* line 34, ../../app/styles/_base.scss */
 a:visited {
   color: #8e8eff;
 }
 
-/* line 44, ../../app/styles/_base.scss */
+/* line 38, ../../app/styles/_base.scss */
 figure {
   margin: 0;
 }
 
-/* line 47, ../../app/styles/_base.scss */
+/* line 41, ../../app/styles/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 1, ../../app/styles/_buttons.scss */
-.button, button {
-  -webkit-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
-  -moz-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
-  -o-transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
-  transition: background-color 50ms ease-in-out, border-color 200ms ease-in-out, -webkit-scale 200ms, -moz-scale 200ms, scale 200ms;
+/* line 4, ../../app/styles/_buttons.scss */
+.button {
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
+  border: 0.27273em solid white;
   font-size: .6875rem;
   padding: 0.75em 1em 0.7em;
-  border: 3px solid white;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -99,13 +89,14 @@ img {
   background-color: #2828ff;
   color: #fff;
 }
-/* line 19, ../../app/styles/_buttons.scss */
-.button:hover, button:hover {
+/* line 16, ../../app/styles/_buttons.scss */
+.button:hover {
   background-color: #8e8eff;
   border-color: #2828ff;
+  color: #fff;
 }
-/* line 23, ../../app/styles/_buttons.scss */
-.button.active, button.active {
+/* line 21, ../../app/styles/_buttons.scss */
+.button.active {
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
@@ -113,34 +104,58 @@ img {
   transform: scale(0.95);
 }
 
-/* line 27, ../../app/styles/_buttons.scss */
+/* line 25, ../../app/styles/_buttons.scss */
 .button--circle {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
   width: 3em;
   height: 3em;
   padding: 0 0 0 3px;
   border-radius: 50%;
-  text-align: center;
 }
-/* line 33, ../../app/styles/_buttons.scss */
+/* line 32, ../../app/styles/_buttons.scss */
 .button--circle:hover {
-  color: #F00;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
-/* line 39, ../../app/styles/_buttons.scss */
-.button.success.is-active, button.success.is-active, .button.success:hover, button.success:hover {
+/* line 38, ../../app/styles/_buttons.scss */
+.button.success.is-active, .button.success:hover {
   background-color: #00b300;
-  color: #fff;
 }
 
-/* line 46, ../../app/styles/_buttons.scss */
-.button.danger.is-active, button.danger.is-active, .button.danger:hover, button.danger:hover {
+/* line 44, ../../app/styles/_buttons.scss */
+.button.danger.is-active, .button.danger:hover {
   background-color: red;
-  color: #fff;
 }
 
-/* line 55, ../../app/styles/_buttons.scss */
-[role="header"] .button.is-active, [role="header"] button.is-active {
+/* line 48, ../../app/styles/_buttons.scss */
+[role="header"] .button.is-active {
   opacity: 0.5;
+}
+
+/* line 53, ../../app/styles/_buttons.scss */
+.button-group {
+  border: 0.1875em solid white;
+}
+/* line 55, ../../app/styles/_buttons.scss */
+.button-group .button {
+  border: 0;
+}
+/* line 58, ../../app/styles/_buttons.scss */
+.button-group .button:not(:first-child) {
+  margin: 0.1875em 0 0.1875em -0.5em;
+  border-left: 0;
 }
 
 /* line 3, ../../app/styles/_layout.scss */
@@ -240,12 +255,12 @@ img {
 
 /* Media Queries */
 @media screen and (min-width: 35em) {
-  /* line 96, ../../app/styles/_layout.scss */
+  /* line 70, ../../app/styles/_layout.scss */
   .panel--left {
     width: 13.75em;
   }
 
-  /* line 99, ../../app/styles/_layout.scss */
+  /* line 73, ../../app/styles/_layout.scss */
   .panel-is-active--left [role="main"] {
     -webkit-transform: translateX(13.75em);
     -moz-transform: translateX(13.75em);
@@ -254,7 +269,7 @@ img {
     transform: translateX(13.75em);
   }
 }
-/* line 105, ../../app/styles/_layout.scss */
+/* line 79, ../../app/styles/_layout.scss */
 .loading {
   position: absolute;
   display: block;
@@ -269,6 +284,10 @@ img {
 [role="header"] button {
   background-color: #00005b;
 }
+/* line 3, ../../app/styles/_modules.scss */
+[role="header"] button:hover {
+  background-color: #2828ff;
+}
 
 /* line 3, ../../app/styles/_views.scss */
 .view {
@@ -276,7 +295,7 @@ img {
   list-style: none;
   padding: 0;
 }
-/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .view:after {
   content: "";
   display: table;
@@ -285,70 +304,80 @@ img {
 
 /* line 8, ../../app/styles/_views.scss */
 .view__item {
-  position: relative;
   -webkit-transition: padding-left 50ms ease-in-out;
   -moz-transition: padding-left 50ms ease-in-out;
   -o-transition: padding-left 50ms ease-in-out;
   transition: padding-left 50ms ease-in-out;
+  position: relative;
 }
 /* line 12, ../../app/styles/_views.scss */
 .view__item > a {
   display: block;
+  padding: 1.25em 0;
   text-decoration: none;
 }
-/* line 16, ../../app/styles/_views.scss */
+/* line 17, ../../app/styles/_views.scss */
+.view__item > a:hover .title {
+  text-decoration: underline;
+}
+/* line 22, ../../app/styles/_views.scss */
 .view__item p {
   color: #000;
+  margin-bottom: 0;
 }
 
-/* line 23, ../../app/styles/_views.scss */
+/* line 30, ../../app/styles/_views.scss */
 .view--grid img {
   width: 100%;
 }
-/* line 26, ../../app/styles/_views.scss */
+/* line 33, ../../app/styles/_views.scss */
 .view--grid h3 {
-  display: none;
+  margin-bottom: 0;
 }
-/* line 29, ../../app/styles/_views.scss */
+/* line 36, ../../app/styles/_views.scss */
 .view--grid .view__item {
   float: left;
   width: 20%;
   margin-right: 1.25em;
 }
 
-/* line 38, ../../app/styles/_views.scss */
+/* line 45, ../../app/styles/_views.scss */
 .view--list .view__item {
   *zoom: 1;
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 1.25em;
+  border-bottom: 1px solid black;
 }
-/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .view--list .view__item:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 43, ../../app/styles/_views.scss */
+/* line 49, ../../app/styles/_views.scss */
+.view--list img {
+  max-height: 3.1em;
+}
+/* line 52, ../../app/styles/_views.scss */
 .view--list figure {
   float: left;
   margin: 0 1.25em 1.25em 0;
 }
-/* line 47, ../../app/styles/_views.scss */
+/* line 56, ../../app/styles/_views.scss */
 .view--list .title {
   margin: 0;
 }
-/* line 50, ../../app/styles/_views.scss */
+/* line 59, ../../app/styles/_views.scss */
 .view--list .actions {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
+  margin-top: -16.5px;
 }
 
-/* line 56, ../../app/styles/_views.scss */
+/* line 66, ../../app/styles/_views.scss */
 .is-loved {
   padding-left: 1.25em;
 }
-/* line 58, ../../app/styles/_views.scss */
+/* line 68, ../../app/styles/_views.scss */
 .is-loved .view__body {
   opacity: 0.5;
 }

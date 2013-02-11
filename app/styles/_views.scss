@@ -6,15 +6,22 @@
 	padding: 0;
 }
 .view__item {
-	position: relative;
 	@include transition(padding-left 50ms ease-in-out);
+	position: relative;
 	
 	> a {
 		display: block;
+		padding: $gutter 0;
 		text-decoration: none;
+		&:hover {
+			.title {
+				text-decoration: underline;
+			}
+		}
 	}
 	p {
 		color: #000;
+		margin-bottom: 0;
 	}
 }
 
@@ -24,7 +31,7 @@
 		width: 100%;
 	}
 	h3 {
-		display: none;
+		margin-bottom: 0;
 	}
 	.view__item {
 		float: left;
@@ -38,7 +45,9 @@
 	.view__item {
 		@include pie-clearfix;
 		border-bottom: 1px solid $lightgray;
-		margin-bottom: $gutter;
+	}
+	img {
+		max-height: 3.1em;
 	}
 	figure {
 		float: left;
@@ -49,8 +58,9 @@
 	}
 	.actions {
 		position: absolute;
-		top: 0;
+		top: 50%;
 		right: 0;
+		margin-top: -(33px / 2);
 	}
 }
 .is-loved {

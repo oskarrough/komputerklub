@@ -4,8 +4,17 @@
   "last": "http://drupal7.maschinentempel.de/node?type=estate&page=0",
   "list": [
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "300",
+      
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/4",
         "id": "4",
@@ -42,7 +51,7 @@
       "field_image": [
         {
           "file": {
-            "uri": "http://drupal7.maschinentempel.de/file/13",
+            "uri": "http://www.arcspace.com/CropUp/-/media/101833/2oslo_opera.jpg",
             "id": "13",
             "resource": "file"
           }
@@ -82,7 +91,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -117,7 +134,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://www.arcspace.com/CropUp/-/media/101833/2oslo_opera.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -152,7 +177,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -187,7 +220,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -222,7 +263,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -257,7 +306,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://www.arcspace.com/CropUp/-/media/101833/2oslo_opera.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -292,7 +349,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -327,7 +392,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -362,7 +435,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",
@@ -397,7 +478,15 @@
       "last_view": null
     },
     {
-      "field_image": [],
+      "field_image": [
+        {
+          "file": {
+            "uri": "http://images.fineartamerica.com/images-medium/sedonas-huge-house-karen-mcewen.jpg",
+            "id": "13",
+            "resource": "file"
+          }
+        }
+      ],
       "field_price": "3000",
       "field_neighbourhood": {
         "uri": "http://drupal7.maschinentempel.de/taxonomy_term/2",

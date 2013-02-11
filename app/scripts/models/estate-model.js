@@ -17,15 +17,11 @@ define([
     },
 
     parse: function(response) {
-      response.image = response.field_image;
+      response.image = response.field_image[0]['file']['uri'];
+      response.neighbourhood = response.field_neighbourhood['id'];
       response.price = response.field_price;
       response.size = response.field_size;
       response.rooms = response.field_rooms;
-      response.image = response.field_image;
-      // @todo: not sure where this check should be made? Oskar.
-      // if(response.image.length < 1) {
-      //   response.image = 'No image';
-      // }
       return response;
     }
 

@@ -2,9 +2,9 @@
 	<% _.each(estates, function(estate){ %>
 	<li class="view__item">
 		<a href="#show/<%= estate.get("nid") %>">
-			<!-- <figure class="view__media">
-				<img src="data/<%= estate.get("image") %>" width="75" height="50">
-			</figure> -->
+			<figure class="view__media">
+				<img src="<%= estate.get("image") %>">
+			</figure>
 			<div class="view__body">
 				<h3 class="title"><%= estate.get("title") %></h3>
 				<p>
@@ -16,8 +16,8 @@
 			</div>
 		</a>
 		<div class="actions">
-			<button id="js-love" class="button--circle success" title="Save it, I'm interested!">✔</button>
-			<button id="js-hate" class="button--circle danger" title="Remove it, I don't like it">✖</button>
+			<button id="js-love" class="button button--circle success" title="Save it, I'm interested!">✔</button>
+			<button id="js-hate" class="button button--circle danger" title="Remove it, I don't like it">✖</button>
 		</div>
 	</li>
 	<% }); %>
